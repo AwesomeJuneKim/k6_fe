@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 60%;
+    margin-left: 20%;
+    background-color: lightpink;
+    
+}
+section{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+header>h1{
+    text-align: center;
+}
+nav>ul{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    justify-content: right;
+}
+nav>ul>li{ /*nav li 와 같다*/
+    margin: 10px;
+    padding: 10px;
+    background-color: coral;
+    border-radius: 5px;
+    color: white;
+    
+}
+nav a{
+    text-decoration-line: none;
+    color: white;
+}
+nav a:hover, nav li:hover{
+    background-color: brown;
+    transition: 0.5s;
+}
+article{
+    padding: 20px;
+}
+article>p{
+    margin: 10px;
+    background-color:darksalmon;
+    color: white;
+    
+}
+section>div{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section p{
+    margin-left: 20px;
+}
+img{
+    border-radius: 50%;
+}
+footer{
+    background-color: rgb(240, 192, 90);
+}
+footer>ul{
+    padding: 40px;
+}
+footer li{
+    list-style: none;
+    color: brown;
+}
+@media only screen and (max-width: 768px) {
+    main{
+        width:100%;
+        margin: left 0%;
+        background-color: rgb(185, 27, 27);
+    }
+    header h1{
+        font-size: medium;
+        color: white;
+        font-size: larger;
+        text-align: center;
+    }
+}

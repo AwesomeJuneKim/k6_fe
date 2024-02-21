@@ -1,0 +1,62 @@
+*{
+    border: 1px solid black;
+    
+}
+body{
+    background-color: azure;
+    padding: 5%;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10px;
+    list-style-type: none;
+}
+button{
+    background-color: rgb(89, 123, 214);
+    border-radius: 5px;
+}
+.boxhtml{
+    background-color: white;
+    padding: 20px;
+}
+.htmlimg{
+    display: flex;
+    flex-direction: row;
+}
+.boxcss{
+    background-color: white;
+    padding: 20px;
+}
+.cssimg{
+    display: flex;
+    flex-direction: row;
+}
+.boxJS{
+    background-color: white;
+    padding: 20px;
+}
+.JSimg{
+    display: flex;
+    flex-direction: row;
+}
+.boxR{
+    background-color: white;
+    padding: 20px;
+}
+.Rimg{
+    display: flex;
+    flex-direction: row;
+}
+.boxhtml .boxcss .boxJS .boxR{
+    padding: 5%;
+}
+.bottom{
+    background-color: black;
+    color: white;
+}
+.bottomLetter{
+    padding: 5%;
+}
