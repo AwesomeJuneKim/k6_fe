@@ -14,3 +14,8 @@ button:hover{
     color: black;
     cursor: pointer;
 }
+h2{
+    /* 자바스크립트의 태그도 css에서 조절할 수 있다. */
+    font-size: medium;
+    color: tomato;
+}
