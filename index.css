@@ -9,7 +9,7 @@ main{
     background-color: lightpink;
 }
 header{
-    background-color: rgb(206, 32, 104);
+    background-color: rgb(231, 188, 124);
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -35,4 +35,14 @@ article li{
     display: flex;
     align-items: center;
     padding: 10px;
+}
+article a{
+    text-decoration: none;
+    color: black;
+}
+article li :hover{
+    background-color: rgb(228, 158, 187);
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
 }
