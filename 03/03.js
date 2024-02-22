@@ -1,4 +1,4 @@
-function handleClick(){
+function handleClick(n){
     //메세지 영역 가져오기1
     //document.getElementById("msgArea").innerHTML="안녕하세요";
 
