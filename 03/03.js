@@ -24,5 +24,11 @@ document/addEventListener("DOMContentLoaded",()=>{
 console.log("DomeContentLoaded ok");
 //버튼생성
 const bt3 = document.createElement("button");
+//버튼 상수를 만듦
+const bt3Txt = document.createTextNode("버튼3");
+//버튼에 넣을 글자를 만듦
+bt3.appendChild(bt3Txt);
+//버튼에 글자를 연결
 document.querySelector("#btArea2").append(bt3);
+//버튼을 html에 연결
 });
