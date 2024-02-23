@@ -16,3 +16,13 @@ const handleClick=(n)=>{
     else msg="안녕히 가세요";
     document.querySelector("#msgArea").innerHTML = msg;
 }
+// 2/23
+// Dome Tree가 완성된 후 실행
+// 돔 컨텐트가 로드된 후에 뒤에것(콜백함수)이 실행
+// 콜백함수는 대부분 화살표 함수를 쓴다.
+document/addEventListener("DOMContentLoaded",()=>{
+console.log("DomeContentLoaded ok");
+//버튼생성
+const bt3 = document.createElement("button");
+document.querySelector("#btArea2").append(bt3);
+});

@@ -21,13 +21,16 @@ h2{
 }
 header>div>a{
     text-decoration: none;
-    display: inline-flex;
     background-color: white;
     color: maroon;
+    display: inline-flex;
     /* 박스가 생겨야 가능한 조건들 */
     padding: 10px;
     border-radius: 5px;
     width: 30px;
     justify-content: center;
     align-items: center;
+}
+.btGroup{
+    background-color: rgb(252, 252, 192);
 }
