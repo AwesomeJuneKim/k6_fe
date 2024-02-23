@@ -13,14 +13,16 @@
 const handleClick=(n)=>{
     let msg ;
     if (n==1) msg="안녕하세요";
-    else msg="안녕히 가세요";
+    else if(n==2)  msg="안녕히 가세요";
+    else if(n==3) msg="어서오세요";
+    else msg=`버튼${n}이 클릭 되었습니다.`;
     document.querySelector("#msgArea").innerHTML = msg;
 }
-// 2/23
+// !!!!!!!!!!!!!!!!2/23!!!!!!!!!!!!!!!!!!!!!!
 // Dome Tree가 완성된 후 실행
 // 돔 컨텐트가 로드된 후에 뒤에것(콜백함수)이 실행
 // 콜백함수는 대부분 화살표 함수를 쓴다.
-document/addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded",()=>{
 console.log("DomeContentLoaded ok");
 //버튼생성
 const bt3 = document.createElement("button");
@@ -31,4 +33,25 @@ bt3.appendChild(bt3Txt);
 //버튼에 글자를 연결
 document.querySelector("#btArea2").append(bt3);
 //버튼을 html에 연결
+
+bt3.addEventListener("click",()=>{
+    handleClick(3);
 });
+});
+document.addEventListener("DOMContentLoaded",()=>{
+    console.log("DomeContentLoaded okay");
+    //버튼생성
+    const bt4 = document.createElement("button");
+    //버튼 상수를 만듦
+    const bt4Txt = document.createTextNode("버튼4");
+    //버튼에 넣을 글자를 만듦
+    bt4.appendChild(bt4Txt);
+    //버튼에 글자를 연결
+    document.querySelector("#btArea3").append(bt4);
+    //버튼을 html에 연결
+    document.getElementById("btArea3").style.backgroundColor="green";
+    
+    bt4.addEventListener("click",()=>{
+        handleClick(4);
+    });
+    });

@@ -34,3 +34,7 @@ header>div>a{
 .btGroup{
     background-color: rgb(252, 252, 192);
 }
+#btArea3>button{
+    background-color: seagreen;
+    /* btArea에는 버튼이 없지만 js에서 버튼을 만들어 주었기 때문에 css에서 버튼으로 데코할 수 있음 */
+}
