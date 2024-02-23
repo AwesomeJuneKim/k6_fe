@@ -21,3 +21,8 @@ header>div>a{
     justify-content: center;
     align-items: center;
 }
+img{
+    display: flex;
+    margin: 10px;
+
+}
