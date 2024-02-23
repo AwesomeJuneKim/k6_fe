@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     //버튼에 글자를 연결
     document.querySelector("#btArea3").append(bt4);
     //버튼을 html에 연결
-    document.getElementById("btArea3").style.backgroundColor="green";
-    
+   
     bt4.addEventListener("click",()=>{
         handleClick(4);
     });
