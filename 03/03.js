@@ -29,6 +29,7 @@ const bt3 = document.createElement("button");
 //버튼 상수를 만듦
 const bt3Txt = document.createTextNode("버튼3");
 //버튼에 넣을 글자를 만듦
+bt3.setAttribute("id","bt3");
 bt3.appendChild(bt3Txt);
 //버튼에 글자를 연결
 document.querySelector("#btArea2").append(bt3);
@@ -47,9 +48,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     //버튼에 넣을 글자를 만듦
     bt4.appendChild(bt4Txt);
     //버튼에 글자를 연결
-    document.querySelector("#btArea3").append(bt4);
+    document.querySelector("#btArea2").append(bt4);
     //버튼을 html에 연결
-    document.getElementById("btArea3").style.backgroundColor="green";
     
     bt4.addEventListener("click",()=>{
         handleClick(4);

@@ -34,7 +34,10 @@ header>div>a{
 .btGroup{
     background-color: rgb(252, 252, 192);
 }
-#btArea3>button{
+#bt3{
+    background-color: blue;
+}/* 아이디가 우선순위가 높아서 아래의 클래스에서 그린을 적용해도 파랑이 나온다. */
+.btGroup>button{
     background-color: seagreen;
-    /* btArea에는 버튼이 없지만 js에서 버튼을 만들어 주었기 때문에 css에서 버튼으로 데코할 수 있음 */
+    /* html의 btArea에는 버튼이 없지만 js에서 버튼을 만들어 주었기 때문에 css에서 버튼으로 데코할 수 있음 */
 }
