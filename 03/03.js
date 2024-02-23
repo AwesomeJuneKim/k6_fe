@@ -50,11 +50,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     //버튼에 글자를 연결
     document.querySelector("#btArea2").append(bt4);
     //버튼을 html에 연결
-<<<<<<< HEAD
-    
-=======
-   
->>>>>>> 370c4928dbe28918bb2ea4710141c3f4601ddfce
+
     bt4.addEventListener("click",()=>{
         handleClick(4);
     });
