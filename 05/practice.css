@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 60%;
+    margin-left: 20%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>h1{
+}
+header>div>a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumslateblue;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width:30px
+    
+}
+a:hover{
+    background-color: olivedrab;
+    transition: 0.5s;
+}
+section{
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+section>img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
