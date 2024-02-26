@@ -13,10 +13,10 @@ const handleChange = (s1, s2, lb1, lb2, t1, t2)=>{
     t1.focus();
     t2.value="";
 } 
+//2+ 섭씨를 화씨로 바꾸는 함수를 만들어 줌
 const handelTxt=()=>{
     console.log("t")
 }
-//2+ 섭씨를 화씨로 바꾸는 함수를 만들어 줌
 
 
 document.addEventListener("DOMContentLoaded",()=>{
