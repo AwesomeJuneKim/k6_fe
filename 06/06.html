@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./05.css">
+    <link rel="stylesheet" href="./06.css">
     <!-- <link rel="stylesheet" href="../03/03.css"> -->
     <link rel="stylesheet" href="../index.css">
-    <script src="./05.js"></script>
+    <script src="./06.js"></script>
     <title>k-disital 6 주사위</title>
 </head>
 <body>
@@ -20,11 +20,19 @@
         <section>
             <h1>자바스크립트 주사위 만들기</h1>
             <div>
-                <img src="./img/1.png" class="c1"/>
-                <img src="./img/2.png" class="c1">
-                <img src="./img/3.png" class="c1"></div>
+                computer
+                <img src="../05/img/1.png" id="img1">
+                user
+                <img src="../05/img/1.png" id="img2">
+            </div>
+            </div>
             <div id="btArea" class="btGroup">
-                <button onclick="handleClick()">주사위를 굴려주세요.</button>
+                <button onclick="handleClick(1)">숫자1</button>
+                <button onclick="handleClick(2)">숫자2</button>
+                <button onclick="handleClick(3)">숫자3</button>
+                <button onclick="handleClick(4)">숫자4</button>
+                <button onclick="handleClick(5)">숫자5</button>
+                <button onclick="handleClick(6)">숫자6</button>
                 <!-- 버튼에 이벤트 달기 -->
             </div>
         </section>

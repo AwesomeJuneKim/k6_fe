@@ -1,0 +1,32 @@
+button{
+    width: 300px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+header>div>a{
+    text-decoration: none;
+    background-color: white;
+    color: maroon;
+    display: inline-flex;
+    /* 박스가 생겨야 가능한 조건들 */
+    padding: 10px;
+    border-radius: 5px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    display: flex;
+    margin: 10px;
+
+}
+.diceBox{
+    display: flex;
+    flex-direction: column;
+}
