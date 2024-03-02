@@ -1,11 +1,26 @@
-.rowbox{
+section>div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-section>div{
+.rowbox{
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+}
+.rowbox>div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+select{
+    display: inline-block;
+}
+input[type=number]{
+    display: inline-flex;
+}
+label{
+    font-size: x-large;
+    font-weight: bold;
 }

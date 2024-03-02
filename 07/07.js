@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     txt1.addEventListener("input",()=>{
 
-        console.log(txt1.value)
+        //console.log(txt1.value)
         if(sel1.value==="℃"){
             txt2.value=(parseFloat(txt1.value)*(9/5))+32;
         }

@@ -24,17 +24,26 @@
                 <div class="rowbox">
                     <div>
                         <select name="select1" id="select1">
-                            <option value="℃">섭씨온도</option>
-                            <option value="℉">화씨온도</option>
-                        </select>
-                        <select name="select2" id="select2">
-                            <option value="℃">섭씨온도</option>
+                            <option value="℃" selected>섭씨온도</option>
                             <option value="℉">화씨온도</option>
                         </select>
                     </div>
                     <div>
-                        <input type="number" id="txt1">
-                        <input type="number" id="txt2">
+                        <select name="select2" id="select2">
+                            <option value="℃">섭씨온도</option>
+                            <option value="℉" selected>화씨온도</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="rowbox">
+                        <div>
+                            <input type="number" id="txt1">
+                            <label for="txt1">℃</label>
+                        </div>
+                        <div>
+                            <input type="number" id="txt2" readonly>
+                            <label for="txt2">℉</label>
+                        </div>
                     </div>
                 </div>
                 <div>msg</div>
