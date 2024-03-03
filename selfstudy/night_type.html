@@ -7,11 +7,44 @@
 </head>
 <body>
     <h1><a href="#">WEB</a></h1>
-    <input type="button" value="night" id="night_day" onclick="
-    var targer=document.querySelector('body');
-    target.style.backgroundColor('black');
-    targer.style.color('white');
-    this.value='day';
-    ">
+    <input type="button" value="night" id="night_day" 
+    onclick="
+        var target=document.querySelector('body');
+        if (this.value==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value='day';
+
+            var alist=document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+                console.log(alist[i]);
+                alist[i].style.color='powderblue';
+                i=i+1;
+            }
+        }else{
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value='night';
+
+            var alist=document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+                console.log(alist[i]);
+                alist[i].style.color='purple';
+                i=i+1;
+            }
+        }
+        ">
+        <ul>
+            <script>
+                var subjects=['HTML', 'CSS', 'JavaScript']
+                var i=0;
+                while(i<subjects.length){
+                    document.write('<li><a href="http://a.com/'+subjects[i]+'">'+subjects[i]+'</a></li>');
+                    i=i+1;
+                }
+            </script>
+        </ul>
 </body>
 </html>
