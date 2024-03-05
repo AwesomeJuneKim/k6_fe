@@ -4,9 +4,17 @@ let n2=10.5;
 let s1="안녕하세요.";
 
 console.log(n1,n2,s1);
-console.log("문자열의 요소에 접근:",s1.charAt(2));
+console.log("문자열의 요소에 접근:",s1[1]);
     //2+ 문자열을 배열처럼 취급하여 출력한다.
-
+for(let c of s1){
+    console.log(c);
+}
+for(let c in s1){//in을 쓰면 key값이 출력된다.
+    console.log(c);
+}
+for(let c in s1){
+console.log(s1[c]);
+}
 //배열
 let arr=['❤',1,'💋',2,]
 console.log("배열",arr);
