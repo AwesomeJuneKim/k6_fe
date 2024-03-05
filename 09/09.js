@@ -45,16 +45,18 @@ for(let [k,v] of Object.entries(obj)){
     console.log("오브젝트 키:" ,k);
     console.log("오브젝트 값:" ,v);
 }
+//내가 실험 한 것
 for(let [k,v] in Object.entries(obj)){
     console.log("오브젝트 in:",[k,v]);
 }
 
 //배열의 맵함수
+//3+ for...of와 같은 결과가 나오므로 배열의 출력은 맵을 쓴다.
 console.log("배열의 맵함수")
-const arr2=arr.map((v)=>{
-    //3+arr에 문자를 추가하여 arr2를 만드는 방법(변수v는 아무 문자나 사용가능)
-    console.log("map의 v:",v)
+const arr2=arr.map((v,i)=>{
+    //3+ arr에 문자를 추가하여 arr2를 만드는 방법(변수v는 아무 문자나 사용가능)
+    console.log("map의 v:",v,"map의 i:",i)
+    //4+ map은 2개의 문자를 출력할 수 있다 key(v) value(i)
     return v+"👌";
 });
 console.log(arr2);
-//3+ for...of와 같은 결과가 나오므로 배열의 출력은 맵을 쓴다.
