@@ -25,6 +25,7 @@ console.log("배열의 요소에 접근:",arr[1])
 for(let i in arr){
     console.log(arr[i]);
 }
+console.log("배열 for...of")
 for(let i of arr){
     console.log(i);
 }
@@ -64,8 +65,8 @@ console.log(arr2);
 
 
 //5+ 위의 맵함수를 간결하게 만듦(콜백함수의 문법에 대한)
-console.log("배열의 맵함수")
-//5+ 콜백에 인수가 한개인 경우 괄호 생략가능
+console.log("배열의 맵함수2")
+//5+ 콜백에 인수가 한개인 경우 인수의 괄호(v)->v 생략가능
 arr2=arr.map(v=>v+"👌");
 //5+ 함수 바디에 실행문이 없고 리턴만 있는 경우 리턴도 생략하고 
     //리턴값만 남겨서 한줄로 표현가능
