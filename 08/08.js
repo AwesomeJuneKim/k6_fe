@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     const updownImg=document.querySelector("img");
     const numInput=document.querySelector("#num");
     const bt= document.querySelector("#btn");
+    const msg= document.querySelector("#msg");
 
     let n;//랜덤 수 생성 변수
     //버튼의 클릭이벤트 달기
@@ -13,6 +14,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         n=Math.floor(Math.random()*100)+1;
         console.log("n=",n);
         flag=true;
+        //초기화 시킴
+        numInput.style.display="inline";
+        numInput.value="";
+        numInput.focus();
+        bt.innerHTML="확인";
     }
     
     // document.querySelector("#num").value=num;
@@ -23,5 +29,24 @@ document.addEventListener("DOMContentLoaded",()=>{
         numInput.focus();
         return;//return이 있으면 더이상 밑의 함수로 내려가지 않는다.
     }
+    //숫자비교
+    
+    const useNum=parseInt(numInput.value);
+    if(n===useNum){
+        //msg.innerHTML="<span>정답입니다.</span>";
+        updownImg.setAttribute("src","./08img/good.png")
+        numInput.style.display="none";
+        bt.innerHTML="재시작";
+        flag=false;//flag를 찾아서 다시 올라감
+    }
+    else if(n>useNum){
+       // msg.innerHTML="<span>숫자가 작습니다.</span>";
+        updownImg.setAttribute("src","./08img/up.png")
+    }
+    else{
+        //msg.innerHTML="<span>숫자가 큽니다.</span>";
+        updownImg.setAttribute("src","./08img/down.png")
+    }
+    
 });
 });

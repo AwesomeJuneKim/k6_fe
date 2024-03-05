@@ -20,6 +20,9 @@ section >div{
     border-radius: 5px;
     margin: 5px;
 }
+.rowbox>input{
+    text-align: center;
+}
 .row > div{
     display: flex;
     align-items: center;
