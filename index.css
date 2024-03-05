@@ -31,7 +31,7 @@ article ul{
 }
 article li{
     height: 40px;
-    border: 1px dotted gray;
+    /* border: 1px dotted gray; */
     display: flex;
     align-items: center;
     padding: 10px;
@@ -63,7 +63,7 @@ section div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px dotted gray;
+    /* border: 1px dotted gray; */
     padding: 20px;
     margin: 10px;
 }
