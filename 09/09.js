@@ -51,6 +51,9 @@ for(let [k,v] of Object.entries(obj)){
 for(let c in obj){//4+ 오브젝트 키값만 출력된다.
     console.log("오브젝트 in:",c);
 }
+// for(let c of obj){
+//     console.log("오브젝트 of:",c);
+// }->에러 출력불가
 
 //배열의 맵함수
 //3+ for...of와 같은 결과가 나오므로 배열의 출력은 맵을 쓴다.
