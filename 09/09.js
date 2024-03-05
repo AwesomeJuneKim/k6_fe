@@ -27,8 +27,9 @@ for(let i in arr){
 }
 console.log("배열 for...of")
 for(let i of arr){
-    console.log(i);
-}
+    console.log(i); 
+}//5+ ->를 맵으로 나타내려면 코드가 길어짐
+
 //배열을 오브젝트로 만들기
 let obj={'❤':1,'💋':2,}//배열에는 의미없는 쉼표가능(트레일링 쉼표)
 console.log("오브젝트",obj);
