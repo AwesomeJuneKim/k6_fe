@@ -68,3 +68,7 @@ arr2=arr.filter(v=>isNaN(v))
 console.log("필터반복간단: ",arr2);
 
 // 오브젝트에 맵과 필터를 사용할 수 없으므로 오브젝트를 배열로 만들어주면 사용가능하다.
+
+//전개 연산자
+let arr22=[...arr];//arr배열을 해체시켜서 arr22에 넣어줌
+console.log("전개연산자: ",arr22);
